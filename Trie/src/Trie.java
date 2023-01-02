@@ -39,7 +39,7 @@ public class Trie {
     }
 
     // Verifica se uma palavra está dentro da trie
-    public boolean containsWordFunc(String word, TrieNode node) {
+    private boolean containsWordFunc(String word, TrieNode node) {
         int index = 0;
         Character c = word.charAt(index);
 
@@ -60,7 +60,7 @@ public class Trie {
         printFunc(root.getChildren());
     }
 
-    public void printFunc(Map<Character, TrieNode> map) {
+    private void printFunc(Map<Character, TrieNode> map) {
         Integer cont = 0;
         System.out.print("[");
         for (Map.Entry<Character, TrieNode> e : map.entrySet()) {
